@@ -11,7 +11,7 @@ import logo from "../assets/logo.png"
     <ul>
     <li>
         <a href="">
-            <Icon class="search-icon" icon="material-symbols:search" color="#E1306C" />
+            <Icon class="search-icon" icon="material-symbols:search" />
         </a>
     </li>
     <li>
@@ -44,7 +44,8 @@ header{
     align-items: center;
 
     img{
-        width: 5%;
+        margin-left: 3%;
+        width: 3%;
         height: 5%;
     }
 
@@ -54,7 +55,6 @@ header{
         gap: 1.5rem;
         flex-wrap: wrap;
         align-items: center;
-
 
     }
 

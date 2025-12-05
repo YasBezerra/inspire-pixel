@@ -4,20 +4,22 @@
 </script>
 
 <template>
-
     <div class="card">
     <img :src="imagem" alt="Imagens de paisagem">
     </div>
 </template>
 
 <style scoped lang="scss">
+
 .card {
-    width: 35vw;
 
     img{
-        width: 100%;
-        height: 100%;
+        width: 293px;
+        height: 500px;
         border-radius: 10px;
+        display: flex;
+        object-fit: cover;
+        gap: 10px;
     }
 }
 </style>

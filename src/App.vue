@@ -2,15 +2,17 @@
 import Header from './components/Header.vue';
 import Banner from './components/Banner.vue';
 import inspire from './components/inspire.vue';
+import Footer from './components/Footer.vue';
 
 </script>
 
 <template>
   <div class="global">
-<Header/>
-<Banner/>
-<inspire/>
-</div>
+    <Header/>
+    <Banner/>
+    <inspire/>
+    <Footer/>
+  </div>
 </template>
 
 <style scoped lang="scss">

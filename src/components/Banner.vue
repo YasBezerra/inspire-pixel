@@ -21,9 +21,10 @@ import fotografo from "../assets/fotografo.png"
     display: flex;
     justify-content: space-between;
     margin: 2rem;
+    font-family: "Poppins", sans-serif;
 
     h1{
-        font-size: 3rem;
+        font-size: 3.6rem;
 
         span{
             color: #E1306C;
@@ -37,6 +38,12 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+img {
+  width: 48% ;
+  height: 38%;
+   
 }
 
 </style>

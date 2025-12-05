@@ -1,22 +1,44 @@
 <script setup>
 import Card from './Card.vue';
+import axios from 'axios';
+import { ref } from "vue";
+
+const imagens = ref ([]);
+
+   async function carregarImagens () {
+    const res = await axios.get("https://picsum.photos/v2/list?page=3&limit=30");
+    console.log(res)
+
+    imagens.value = res.data
+    }
+
+    carregarImagens();
+
 </script>
 
 <template>
     <h2>Inspire-se</h2>
     <section class="inspire">
-        <Card imagem="https://i.pinimg.com/736x/e8/26/dc/e826dcad1e8f95c65218e8f9c4ab4902.jpg"/>
-        <Card imagem="https://i.pinimg.com/736x/d0/d3/81/d0d381a9e6a6b1b3b31a7f2f4bdd3f24.jpg"/>
-        <Card imagem="https://i.pinimg.com/736x/f5/52/36/f552363a9488166b6f811642aff10b78.jpg"/>
+        <Card v-for=" img in imagens "
+        :imagem="img.download_url"/>
     </section>
 
 </template>
 
 <style scoped lang="scss">
-.inspire, h2 {
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
+
+h2 {
+    margin-left: 5% ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.inspire {
+    display: grid;                                
+    grid-template-columns: repeat(3, minmax(0, 1fr));        
+    gap: 20px;
+    justify-items: center;   /* centraliza os cards */
     margin: 2rem;
 }
 </style>
