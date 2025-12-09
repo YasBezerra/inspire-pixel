@@ -31,6 +31,10 @@ import fotografo from "../assets/fotografo.png"
             font-size: 4.5rem;
         }
     }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 div{
@@ -45,5 +49,31 @@ img {
   height: 38%;
    
 }
+
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 2.2rem;
+
+      span {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  div {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 </style>

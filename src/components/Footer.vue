@@ -92,7 +92,6 @@ ul{
     margin-bottom: 2% ;
     }
     }
-
 }
 
 .redes {
@@ -102,4 +101,40 @@ ul{
     align-items: center;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+    > div {
+      width: 90%; 
+      margin: 15px 0;
+
+      p, input, .btnPink {
+        margin: 0 auto 10px auto;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      .btnPink {
+        width: 120px;
+      }
+    }
+
+    ul li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .redes {
+      display: none;
+    }
+  }
+}
 </style>

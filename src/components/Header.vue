@@ -11,7 +11,7 @@ import logo from "../assets/logo.png"
     <ul>
     <li>
         <a href="">
-            <Icon class="search-icon" icon="material-symbols:search" />
+            <Icon class="search-icon" icon="material-symbols:search" width="30px" height="30px"/>
         </a>
     </li>
     <li>
@@ -25,7 +25,7 @@ import logo from "../assets/logo.png"
     </li>
     <li>
         <a href="">
-            <Icon class="charm:person" icon="octicon:person-16" color="#E1306C"/>
+            <Icon class="charm:person" icon="octicon:person-16" color="#E1306C" width="30px" height="30px"/>
         </a>
         <img src="" alt="">
     </li>
@@ -55,6 +55,7 @@ header{
         gap: 1.5rem;
         flex-wrap: wrap;
         align-items: center;
+        font-size: 1.2rem;
 
     }
 

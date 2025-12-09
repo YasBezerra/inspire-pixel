@@ -19,6 +19,7 @@
 .card {
     position: relative;
     transition: 0.5s ease;
+    overflow: hidden;
 
     .card:hover {
         transform: translateY(-4px);
@@ -26,14 +27,15 @@
     }
 
     img{
-        
+
         width: 293px;
         height: 500px;
         border-radius: 10px;
         display: block;
         object-fit: cover;
-        gap: 10px;
+        gap: 5px;
         object-fit: cover;
+        flex-wrap: wrap;
     }
 
     button {
@@ -53,5 +55,27 @@
     transform: scale(1.2); 
     opacity: 0.9;
     }
+
+@media (max-width: 600px) {
+
+  .card {
+    width: 48%;
+    display: flex;
+    flex-direction: column; /* IMPORTANTE */
+    justify-content: space-between;
+    flex-wrap: nowrap; /* evita quebra estranha */
+  }
+
+  img {
+    width: 100%; /* aqui resolve */
+    height: 250px;
+  }
+
+  button {
+    font-size: 18px;
+    top: 6px;
+    right: 6px;
+  }
+}
 }
 </style>

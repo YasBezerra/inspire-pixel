@@ -36,9 +36,16 @@ h2 {
 
 .inspire {
     display: grid;                                
-    grid-template-columns: repeat(3, minmax(0, 1fr));        
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));        
+    gap: 70px;
     justify-items: center;   /* centraliza os cards */
-    margin: 2rem;
+    margin-left: 2rem;
+
+@media (max-width: 600px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 39px;
+    justify-content: center;
+    margin-left: 0;
+}
 }
 </style>
